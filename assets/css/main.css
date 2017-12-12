@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(to left bottom, #76278F, #2B1E66);
+}
+
+#logo-white{
+    width: 80%;
+    height: auto;
+    padding-top: 15em;
+    align-content: center;
+}
