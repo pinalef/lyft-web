@@ -1,10 +1,27 @@
+
 body{
-    background: linear-gradient(to left bottom, #76278F, #2B1E66);
+	background: linear-gradient(to left bottom, #76278F, #2B1E66);
+	background-size: cover;
 }
 
 #logo-white{
-    width: 80%;
+    width: 100%;
     height: auto;
-    padding-top: 15em;
-    align-content: center;
+    padding: 15em 0;
+		align-content: center;
+}
+
+#home{
+	background-image: url(https://giphy.com/gifs/a2QExYEHYCQJq);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.bottom-align-text{
+	margin-top: 23em !important; 
+	bottom: 1em;
+}
+
+#sub{
+	border-bottom: 1px solid gray;
 }
