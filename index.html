@@ -10,6 +10,7 @@
     <title>Lyft</title>
 </head>
 <body>
+	<!-- SplashScreen -->
 <div class="container-fluid " id="splashscreen">
   <div class="row">
 		<div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
@@ -17,69 +18,144 @@
 		</div>
   </div>
 </div>
-<!-- Pantalla principal -->
+<!-- Home Page -->
 <div class="container-fluid" id="home" >
 	<div class="row bottom-align-text">
 		<div class="col-xs-6 col-sm-6">
 				<button class="btn btn-default pull-right" type="submit">LOG IN</button>
 		</div>
 		<div class="col-xs-6 col-sm-6">
-				<button class="btn btn-default pull-left" id="sign-up-btn" type="submit" data-toggle="modal" data-target="#modal1">SIGN UP</button>
+				<button class="btn btn-default pull-left" id="sign-up-btn" type="submit">SIGN UP</button>
 		</div>
 	</div>
 </div>		
 </div>
-<!-- Modal 1 -->
-<div class="modal fade jumbotron" id="modal1" role="dialog">
-	<div class="modal-dialog">
-<!-- Modal content-->
-  	<div class="modal-content">
-    	<div class="modal-header">
-      	<h4 class="modal-title center">Sign Up</h4>
-    	</div>
-  		<div class="modal-body center">
-				<p id="sub">Join now for free ride credit</p>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12">
-						<div class="col-xs-6 col-sm-6 centered">
-							<select class="custom-select">
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-							</select>
+<!-- SignUp page -->
+<section class="container-fluid" id="SignUp" >
+	<div class="row">
+		<div class="col-xs-2">
+		<a id="go-home"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-xs-8">
+			<h4 class=" text-center">Sign Up</h4>
+		</div>
+	</div>
+	<div class="row">
+		<p class="text-center">Join now for free ride credit</p>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<div class="col-xs-4 col-sm-4">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="countries" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="mexico">
+					<img class="dropdownImage flag" src="assets/img/mexico.png" alt="">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<li><a href="#"><img class="flag" src="assets/img/colombia.png" alt=""> </a></li>
+					<li><a href="#"><img class="flag" src="assets/img/peru.png" alt=""> </a></li>
+					<li><a href="#"><img class="flag" src="assets/img/chile.png" alt=""> </a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<input type="number" id="phoneNumber" class="form-control" text="52" maxlength="10"/>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h6 class="text-center">We'll send a text to verify your phone</h6>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<button type="button" id="nextButton" class="btn codeButton" >NEXT</button>
+		</div>
+	</div>
+</section>
+<!-- Verification page -->
+<section class="container-fluid" id="verPage">
+		<div class="row">
+				<div class="col-xs-2">
+				<a id="go-sign-up"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-xs-8">
+					<h4 class=" text-center">Sign Up</h4>
+				</div>
+			</div>
+			<div class="row">
+				<p class="text-center">Join now for free ride credit</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+						<div class="col-xs-6 col-sm-6">
+								<dl class="text-right">LAB</dl>
 						</div>
 						<div class="col-xs-6 col-sm-6">
-							<form class="form-horizontal text-center">
-							<div class="form-group">
-								<label class="control-label col-sm-2" for="num"></label>
-								<div class="col-sm-10">
-									<p class="form-control-static">Ingrese su numero de telefono</p>
-								</div>
-							</div>
+								<input type="number" id="verNumber" class="form-control" maxlength="3"/>
+						</div>
+				</div>
+			</div>
+			<div class="row">
+				<h6 class="text-center">Enter the code sent to +52 </h6>
+				<button type="button" class="btn btn-sm center codeButton" >Resend code</button>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<button type="button" class="btn" id="verButton">NEXT</button>
+				</div>
+			</div>
+</section>
+<!-- Create your account -->
+<section class="container-fluid" id="accountPage">
+		<div class="row">
+				<div class="col-xs-2">
+				<a id="go-verification"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-xs-8">
+					<h4 class=" text-center">Sign Up</h4>
+				</div>
+			</div>
+			<div class="row">
+				<p class="text-center">Join now for free ride credit</p>
+			</div>
+			<div class="container">
+					<div class="wrapper">
+							<form class="form-signin">       
+								<h2 class="form-signin-heading">Please login</h2>
+								<input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+								<input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+								<label class="checkbox">
+									<input type="checkbox" required value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+								</label>
+								<div class="row">
+										<div class="col-xs-12 col-sm-12">
+										 <button class="btn btn-lg btn-primary btn-block" type="submit">Next</button> 
+										</div>
+									</div>
 							</form>
 						</div>
+			</div>
+</section>
+<!-- Ok -->
+<section class="container-fluid " id="successful">
+		<div >
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
+						<img id="logo-white" class="img-responsive center-block" src="assets/img/logo-white.png" alt="">
 					</div>
-				</div>
-				<div class="row">
-					<p>We'll send a text to verify your phone</p>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12">
-						<button type="button" class="btn">NEXT</button>
+					<div class="row">
+							<div class="col-xs-12 col-sm-12">
+							<i class="fa fa-check-circle-o fa-5x center-block" aria-hidden="true"></i>
+							</div>
 					</div>
 				</div>
 			</div>
-<!-- modal footer -->
-		<div class="modal-footer">
-  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
-</div>
-</div>
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="assets/js/app.js"></script>
+<script src="https://use.fontawesome.com/69d348fe9a.js"></script>
 </body>
 </html>
