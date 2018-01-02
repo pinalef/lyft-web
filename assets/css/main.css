@@ -8,7 +8,7 @@
     width: 100%;
     height: auto;
     padding: 15em 0;
-		align-content: center;
+	align-content: center;
 }
 
 #home{
@@ -20,7 +20,7 @@
 	
 }
 .bottom-align-text{
-	margin-top: 23em !important; 
+	margin-top: 80vh !important; 
 	bottom: 1em;
 }
 

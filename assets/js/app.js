@@ -10,7 +10,7 @@ $('#accountPage').hide();
 $('#successful').hide();
 //$('body').css({'background-color': 'linear-gradient(to left bottom, #76278F, #2B1E66)', 'background-size': 'cover'});
 $('#splashscreen').show();
-$('#splashscreen').fadeOut(3000).hide(1000);
+$('#splashscreen').fadeOut(2000).hide(1000);
 setTimeout(function(){
     $('#home').delay(2000).fadeIn(1000);
 }, 2000)
